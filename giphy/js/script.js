@@ -30,3 +30,11 @@ var insertImage = function(url) {
   $(newImage).attr('src', url);
   $(imgContainer).append(newImage);
 };
+$(document).ready(function(){
+$("input").keypress(function(event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        showGif();
+    }
+});
+});
